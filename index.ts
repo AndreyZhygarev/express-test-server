@@ -1,5 +1,5 @@
-const express = require("express");
-const path = require("path");
+import express from "express";
+import path from "path";
 
 const app = express();
 
@@ -11,6 +11,6 @@ app.get("/", (_req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, (_req, _res) => {
+app.listen(PORT, () => {
   console.log(`server is running on port ${PORT}`);
 });
